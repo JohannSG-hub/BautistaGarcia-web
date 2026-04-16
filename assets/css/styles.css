@@ -1,0 +1,59 @@
+/* RESET SUAVE */
+* {
+  scroll-behavior: smooth;
+}
+
+/* TIPOGRAFÍA BASE */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* EFECTO HOVER EN TARJETAS */
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+}
+
+/* BOTONES MÁS PREMIUM */
+.btn {
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SOMBRAS MÁS SUAVES */
+.shadow-custom {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ANIMACIÓN DE ENTRADA */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* NAVBAR SCROLL */
+.nav-scrolled {
+  background-color: white !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* WHATSAPP FLOAT ANIMATION */
+.whatsapp-btn {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
