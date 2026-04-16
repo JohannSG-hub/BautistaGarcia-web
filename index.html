@@ -1,198 +1,387 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dr. Félix Bautista García | Cirujano en Lima</title>
-<meta name="description" content="Cirujano general y oncólogo en Lima. Especialista en cirugía oncológica, hernias y tratamiento del cáncer.">
+  <title>Dr. Félix Bautista García | Cirujano en Lima, Perú | Cirugía Oncológica y General</title>
+  <meta name="description" content="Dr. Félix Bautista García, cirujano en Lima especializado en cirugía general y oncológica. Atención personalizada y segura para hernia, hemorroides y tratamiento de cáncer en Lima, Perú.">
+  <meta name="keywords" content="cirujano en Lima, cirujano oncologico Peru, tratamiento de cancer Lima, cirugía general, hernia, hemorroides">
 
-<!-- Tailwind -->
-<script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-<!-- Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
-<!-- CSS -->
-<link rel="stylesheet" href="assets/css/styles.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        primary: "#0e3a5d",
-        secondary: "#25D366"
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0e3a5d",
+            secondary: "#25D366"
+          }
+        }
       }
     }
-  }
-}
-</script>
-
+  </script>
 </head>
 
-<body class="bg-gray-50 font-[Inter]">
+<body class="bg-gray-50 text-slate-800 font-[Inter]">
 
-<!-- WhatsApp -->
-<a href="https://wa.me/51999999999"
-class="whatsapp-btn fixed bottom-6 right-6 bg-secondary text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
-<span class="material-symbols-outlined text-3xl">chat</span>
-</a>
+  <!-- WhatsApp Flotante -->
+  <a
+    href="https://wa.me/51996382971?text=Hola%20doctor,%20deseo%20informaci%C3%B3n"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir WhatsApp para consulta directa"
+    class="whatsapp-btn fixed bottom-6 right-6 z-50 inline-flex items-center justify-center bg-secondary text-white w-16 h-16 rounded-full shadow-2xl hover:shadow-green-300/50 transition-all duration-300"
+  >
+    <span class="material-symbols-outlined text-3xl">chat</span>
+  </a>
 
-<!-- NAV -->
-<header class="bg-white shadow sticky top-0 z-50">
-<div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+  <!-- NAV -->
+  <header class="bg-white/95 backdrop-blur-sm shadow sticky top-0 z-40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined text-primary text-3xl">medical_services</span>
+        <div>
+          <p class="font-bold text-primary">Dr. Félix Bautista</p>
+          <p class="text-xs text-gray-500">Cirugía General y Oncológica</p>
+        </div>
+      </div>
 
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-3xl">medical_services</span>
-<div>
-<h1 class="font-bold text-primary">Dr. Félix Bautista</h1>
-<p class="text-xs text-gray-500">Cirugía General y Oncológica</p>
-</div>
-</div>
+      <nav class="hidden lg:flex gap-6 text-sm font-medium text-slate-700">
+        <a class="hover:text-primary transition" href="#about">Sobre mí</a>
+        <a class="hover:text-primary transition" href="#services">Servicios</a>
+        <a class="hover:text-primary transition" href="#experience">Experiencia</a>
+        <a class="hover:text-primary transition" href="#diseases">Enfermedades</a>
+        <a class="hover:text-primary transition" href="#faq">FAQ</a>
+        <a class="hover:text-primary transition" href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-<nav class="hidden md:flex gap-6 text-sm font-medium">
-<a href="#about">Sobre mí</a>
-<a href="#services">Servicios</a>
-<a href="#contact">Contacto</a>
-</nav>
+  <!-- HERO -->
+  <section class="fade-in max-w-7xl mx-auto grid md:grid-cols-2 gap-10 lg:gap-14 px-6 py-14 lg:py-20 items-center">
+    <img src="assets/img/doctor1.jpeg" alt="Dr. Félix Bautista" class="hero-image rounded-2xl shadow-2xl object-cover w-full">
 
-</div>
-</header>
+    <div>
+      <p class="text-sm text-primary font-bold mb-3 tracking-wide">CMP 031636 | RNE 19886</p>
+      <h1 class="text-4xl lg:text-5xl font-extrabold mb-4 leading-tight">
+        Cirujano en Lima con enfoque humano, preciso y seguro
+      </h1>
+      <p class="text-lg text-slate-600 mb-6">
+        El Dr. Félix Moisés <span class="text-primary font-semibold">Bautista García</span> brinda atención quirúrgica especializada para cirugía general y oncológica,
+        con una experiencia orientada a resultados y bienestar integral.
+      </p>
 
-<!-- HERO -->
-<section class="fade-in max-w-7xl mx-auto grid md:grid-cols-2 gap-10 p-10 items-center">
+      <div class="flex flex-wrap gap-4 items-center mb-5">
+        <a
+          href="https://wa.me/51996382971?text=Hola%20doctor,%20deseo%20informaci%C3%B3n"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-whatsapp inline-flex items-center gap-2 bg-secondary text-white px-7 py-3 rounded-xl font-bold"
+        >
+          <span class="material-symbols-outlined text-xl">chat</span>
+          Agenda tu consulta hoy
+        </a>
+        <span class="text-sm text-slate-500">Respuesta rápida · Consulta directa · Sin intermediarios</span>
+      </div>
 
-<img src="assets/img/doctor1.jpeg" class="rounded-2xl shadow-xl">
+      <p class="text-sm text-slate-600">Atención personalizada y segura en Lima, Perú.</p>
+    </div>
+  </section>
 
-<div>
-<p class="text-sm text-primary font-bold mb-2">CMP 031636 | RNE 19886</p>
+  <!-- ABOUT -->
+  <section id="about" class="fade-in bg-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+      <img src="assets/img/consulta.jpg" alt="Consulta médica especializada" class="rounded-2xl shadow-xl">
 
-<h2 class="text-4xl font-extrabold mb-3">
-Dr. Félix Moisés <span class="text-primary">Bautista García</span>
-</h2>
+      <div>
+        <h2 class="text-3xl lg:text-4xl font-bold mb-5 text-primary">Sobre el especialista</h2>
+        <p class="text-slate-600 mb-5 leading-relaxed">
+          Médico cirujano egresado de la Universidad Nacional Federico Villarreal, especialista en cirugía general y oncológica
+          con formación en el Instituto Nacional de Enfermedades Neoplásicas (INEN).
+        </p>
 
-<p class="text-gray-600 mb-5">
-Especialista en cirugía general y oncológica, brindando atención quirúrgica segura,
-precisa y con enfoque humano en cada paciente.
-</p>
+        <ul class="space-y-3 text-slate-700">
+          <li class="flex gap-2">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            Experiencia en Clínica Javier Prado y Hospital Grau
+          </li>
+          <li class="flex gap-2">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            Formación especializada en oncología quirúrgica
+          </li>
+          <li class="flex gap-2">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            Atención personalizada, ética y humana
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<a href="https://wa.me/51999999999"
-class="btn bg-secondary text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600">
-Contactar por WhatsApp
-</a>
+  <!-- SERVICIOS -->
+  <section id="services" class="fade-in py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-3">Servicios quirúrgicos</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">Diagnóstico preciso, acompañamiento cercano y planificación quirúrgica orientada a una recuperación segura.</p>
+      </div>
 
-</div>
-</section>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="card-hover bg-white p-6 rounded-2xl shadow-custom border border-slate-100">
+          <img src="assets/img/cirugia-general.jpg" alt="Cirugía general" class="rounded-lg mb-4 w-full h-44 object-cover">
+          <h3 class="font-bold text-lg mb-2">Cirugía General</h3>
+          <p class="text-slate-600 text-sm">Hernias, vesícula, apéndice y patologías abdominales con protocolos modernos de seguridad.</p>
+        </article>
 
-<!-- ABOUT -->
-<section id="about" class="fade-in bg-white py-16">
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+        <article class="card-hover bg-white p-6 rounded-2xl shadow-custom border border-slate-100">
+          <img src="assets/img/cirugia-oncologica.jpg" alt="Cirugía oncológica" class="rounded-lg mb-4 w-full h-44 object-cover">
+          <h3 class="font-bold text-lg mb-2">Cirugía Oncológica</h3>
+          <p class="text-slate-600 text-sm">Tratamiento quirúrgico de cáncer con abordaje individual, ético y de alta precisión clínica.</p>
+        </article>
 
-<img src="assets/img/consulta.jpg" class="rounded-xl shadow">
+        <article class="card-hover bg-white p-6 rounded-2xl shadow-custom border border-slate-100">
+          <img src="assets/img/diagnostico.jpg" alt="Diagnóstico especializado" class="rounded-lg mb-4 w-full h-44 object-cover">
+          <h3 class="font-bold text-lg mb-2">Diagnóstico Especializado</h3>
+          <p class="text-slate-600 text-sm">Evaluación médica completa para definir el tratamiento quirúrgico más adecuado para cada paciente.</p>
+        </article>
+      </div>
 
-<div>
-<h3 class="text-3xl font-bold mb-4 text-primary">Sobre el especialista</h3>
+      <div class="mt-8 text-center">
+        <a
+          href="https://wa.me/51996382971?text=Hola%20doctor,%20deseo%20informaci%C3%B3n"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-whatsapp inline-flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded-xl font-semibold"
+        >
+          <span class="material-symbols-outlined">chat</span>
+          Consulta directa por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
 
-<p class="text-gray-600 mb-4">
-Médico cirujano egresado de la Universidad Nacional Federico Villarreal,
-especialista en cirugía general y oncológica con formación en el Instituto Nacional
-de Enfermedades Neoplásicas (INEN).
-</p>
+  <!-- EXPERIENCIA -->
+  <section id="experience" class="fade-in bg-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl lg:text-4xl font-bold text-primary text-center mb-10">Experiencia profesional</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="card-hover bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-custom">
+          <p class="text-xs font-semibold text-primary mb-2">Formación</p>
+          <h3 class="font-bold text-lg mb-2">Universidad Nacional Federico Villarreal</h3>
+          <p class="text-slate-600 text-sm">Base médica sólida en cirugía con enfoque académico y clínico.</p>
+        </article>
+        <article class="card-hover bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-custom">
+          <p class="text-xs font-semibold text-primary mb-2">Especialización</p>
+          <h3 class="font-bold text-lg mb-2">Instituto Nacional de Enfermedades Neoplásicas (INEN)</h3>
+          <p class="text-slate-600 text-sm">Entrenamiento especializado en cirugía oncológica y tratamiento integral de cáncer.</p>
+        </article>
+        <article class="card-hover bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-custom">
+          <p class="text-xs font-semibold text-primary mb-2">Experiencia clínica</p>
+          <h3 class="font-bold text-lg mb-2">Clínica Javier Prado y Hospital Grau</h3>
+          <p class="text-slate-600 text-sm">Atención quirúrgica hospitalaria con alto compromiso ético y humano.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<ul class="space-y-3">
+  <!-- ENFERMEDADES TRATADAS -->
+  <section id="diseases" class="fade-in py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl lg:text-4xl font-bold text-primary text-center mb-10">Enfermedades tratadas</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="card-hover bg-white rounded-2xl p-5 shadow-custom border border-slate-100">
+          <h3 class="font-semibold mb-1">Hernias abdominales</h3>
+          <p class="text-sm text-slate-600">Evaluación y resolución quirúrgica con enfoque mínimamente invasivo cuando aplica.</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-5 shadow-custom border border-slate-100">
+          <h3 class="font-semibold mb-1">Hemorroides</h3>
+          <p class="text-sm text-slate-600">Tratamiento individual según grado y síntomas, priorizando confort y recuperación.</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-5 shadow-custom border border-slate-100">
+          <h3 class="font-semibold mb-1">Cáncer digestivo</h3>
+          <p class="text-sm text-slate-600">Manejo quirúrgico especializado en coordinación con evaluación oncológica integral.</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-5 shadow-custom border border-slate-100">
+          <h3 class="font-semibold mb-1">Tumores de partes blandas</h3>
+          <p class="text-sm text-slate-600">Valoración diagnóstica y cirugía oncológica orientada al control local de la enfermedad.</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-5 shadow-custom border border-slate-100">
+          <h3 class="font-semibold mb-1">Patología de vesícula</h3>
+          <p class="text-sm text-slate-600">Atención de colelitiasis y cuadros inflamatorios con indicación quirúrgica segura.</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-5 shadow-custom border border-slate-100">
+          <h3 class="font-semibold mb-1">Apendicitis y urgencias quirúrgicas</h3>
+          <p class="text-sm text-slate-600">Intervención oportuna para reducir complicaciones y acelerar recuperación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<li class="flex gap-2">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-Experiencia en Clínica Javier Prado y Hospital Grau
-</li>
+  <!-- DIFERENCIALES -->
+  <section id="differentials" class="fade-in bg-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl lg:text-4xl font-bold text-primary text-center mb-10">Diferenciales de atención premium</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="card-hover bg-slate-50 p-6 rounded-2xl shadow-custom border border-slate-100">
+          <span class="material-symbols-outlined text-primary text-4xl mb-3">school</span>
+          <h3 class="font-bold mb-2">Formación especializada en oncología</h3>
+          <p class="text-sm text-slate-600">Actualización continua para tomar decisiones quirúrgicas bien fundamentadas.</p>
+        </article>
+        <article class="card-hover bg-slate-50 p-6 rounded-2xl shadow-custom border border-slate-100">
+          <span class="material-symbols-outlined text-primary text-4xl mb-3">local_hospital</span>
+          <h3 class="font-bold mb-2">Experiencia hospitalaria</h3>
+          <p class="text-sm text-slate-600">Trayectoria en instituciones reconocidas de Lima en cirugía general y oncológica.</p>
+        </article>
+        <article class="card-hover bg-slate-50 p-6 rounded-2xl shadow-custom border border-slate-100">
+          <span class="material-symbols-outlined text-primary text-4xl mb-3">favorite</span>
+          <h3 class="font-bold mb-2">Atención ética y humana</h3>
+          <p class="text-sm text-slate-600">Acompañamiento cercano para que cada paciente se sienta seguro y bien informado.</p>
+        </article>
+        <article class="card-hover bg-slate-50 p-6 rounded-2xl shadow-custom border border-slate-100">
+          <span class="material-symbols-outlined text-primary text-4xl mb-3">biotech</span>
+          <h3 class="font-bold mb-2">Tecnología moderna</h3>
+          <p class="text-sm text-slate-600">Enfoque clínico actualizado para diagnóstico y planeamiento quirúrgico eficiente.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<li class="flex gap-2">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-Especialista en cirugía oncológica
-</li>
+  <!-- POR QUÉ ELEGIR -->
+  <section class="fade-in py-16 lg:py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="bg-gradient-to-r from-primary to-sky-800 text-white rounded-3xl p-8 lg:p-10 shadow-2xl">
+        <h2 class="text-3xl font-bold mb-6">¿Por qué elegir al doctor?</h2>
+        <div class="grid md:grid-cols-2 gap-4 text-sm lg:text-base">
+          <p class="flex gap-2"><span class="material-symbols-outlined">verified</span>Protocolos de seguridad quirúrgica en cada procedimiento.</p>
+          <p class="flex gap-2"><span class="material-symbols-outlined">verified</span>Comunicación clara desde la primera consulta hasta el seguimiento.</p>
+          <p class="flex gap-2"><span class="material-symbols-outlined">verified</span>Atención personalizada y segura, centrada en cada caso clínico.</p>
+          <p class="flex gap-2"><span class="material-symbols-outlined">verified</span>Consulta directa por WhatsApp para orientación inicial rápida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<li class="flex gap-2">
-<span class="material-symbols-outlined text-primary">check_circle</span>
-Atención personalizada y ética médica
-</li>
+  <!-- FAQ -->
+  <section id="faq" class="fade-in bg-white py-16 lg:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl lg:text-4xl font-bold text-primary text-center mb-8">Preguntas frecuentes</h2>
+      <div class="space-y-4">
+        <article class="faq-item bg-slate-50 rounded-xl border border-slate-200">
+          <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold">
+            ¿Qué enfermedades trata?
+            <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">
+            Hernias, hemorroides, patologías abdominales y diferentes tipos de cáncer que requieren manejo quirúrgico especializado.
+          </div>
+        </article>
+        <article class="faq-item bg-slate-50 rounded-xl border border-slate-200">
+          <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold">
+            ¿Dónde atiende?
+            <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">
+            Atiende en San Isidro, Lima, y en centros hospitalarios de referencia según el procedimiento requerido.
+          </div>
+        </article>
+        <article class="faq-item bg-slate-50 rounded-xl border border-slate-200">
+          <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold">
+            ¿Cómo agendar cita?
+            <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">
+            Puedes agendar por WhatsApp con respuesta rápida y consulta directa, sin intermediarios.
+          </div>
+        </article>
+        <article class="faq-item bg-slate-50 rounded-xl border border-slate-200">
+          <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold">
+            ¿Acepta seguros?
+            <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">
+            La cobertura depende del tipo de seguro y del centro de atención. Se orienta cada caso durante la consulta.
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-</ul>
+  <!-- CONTACTO -->
+  <section id="contact" class="fade-in py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl lg:text-4xl font-bold text-center mb-10 text-primary">Contacto</h2>
 
-</div>
-</div>
-</section>
+      <div class="grid md:grid-cols-3 gap-6 text-center mb-8">
+        <div class="bg-white rounded-xl p-6 shadow-custom border border-slate-100">
+          <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+          <p class="mt-2">Av. Javier Prado Este 499</p>
+          <p class="text-slate-500">San Isidro, Lima</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-custom border border-slate-100">
+          <span class="material-symbols-outlined text-primary text-3xl">call</span>
+          <p class="mt-2">+51 996 382 971</p>
+          <p class="text-slate-500">Atención personalizada y segura</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-custom border border-slate-100">
+          <span class="material-symbols-outlined text-primary text-3xl">mail</span>
+          <p class="mt-2">contacto@drfelixbautista.com</p>
+          <p class="text-slate-500">Respuesta rápida</p>
+        </div>
+      </div>
 
-<!-- SERVICIOS -->
-<section id="services" class="fade-in py-16">
-<div class="max-w-7xl mx-auto px-6">
+      <div class="text-center">
+        <a
+          href="https://wa.me/51996382971?text=Hola%20doctor,%20deseo%20informaci%C3%B3n"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-whatsapp inline-flex items-center gap-2 bg-secondary text-white px-7 py-3 rounded-xl font-bold"
+        >
+          <span class="material-symbols-outlined">chat</span>
+          Agenda tu consulta hoy
+        </a>
+      </div>
+    </div>
+  </section>
 
-<h3 class="text-3xl font-bold text-center mb-10 text-primary">Servicios</h3>
+  <!-- CTA FINAL -->
+  <section class="fade-in pb-12 lg:pb-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="bg-white border border-slate-200 rounded-3xl p-8 lg:p-10 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div>
+          <h2 class="text-2xl lg:text-3xl font-bold text-primary mb-2">¿Necesitas una evaluación quirúrgica confiable?</h2>
+          <p class="text-slate-600">Agenda tu consulta hoy y recibe orientación profesional con atención personalizada y segura.</p>
+        </div>
+        <a
+          href="https://wa.me/51996382971?text=Hola%20doctor,%20deseo%20informaci%C3%B3n"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-whatsapp inline-flex items-center gap-2 bg-secondary text-white px-7 py-3 rounded-xl font-bold whitespace-nowrap"
+        >
+          <span class="material-symbols-outlined">chat</span>
+          Escribir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
 
-<div class="grid md:grid-cols-3 gap-6">
+  <!-- FOOTER -->
+  <footer class="bg-primary text-white text-center p-6">
+    <p>© 2026 Dr. Félix Bautista García · Cirujano en Lima, Perú</p>
+  </footer>
 
-<div class="card-hover bg-white p-6 rounded-xl shadow">
-<img src="assets/img/cirugia-general.jpg" class="rounded mb-4">
-<h4 class="font-bold text-lg">Cirugía General</h4>
-<p class="text-gray-600 text-sm">Hernias, vesícula, apéndice y patologías abdominales.</p>
-</div>
-
-<div class="card-hover bg-white p-6 rounded-xl shadow">
-<img src="assets/img/cirugia-oncologica.jpg" class="rounded mb-4">
-<h4 class="font-bold text-lg">Cirugía Oncológica</h4>
-<p class="text-gray-600 text-sm">Tratamiento quirúrgico del cáncer.</p>
-</div>
-
-<div class="card-hover bg-white p-6 rounded-xl shadow">
-<img src="assets/img/diagnostico.jpg" class="rounded mb-4">
-<h4 class="font-bold text-lg">Diagnóstico</h4>
-<p class="text-gray-600 text-sm">Evaluación médica especializada.</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contact" class="fade-in bg-white py-16">
-<div class="max-w-7xl mx-auto px-6">
-
-<h3 class="text-3xl font-bold text-center mb-10 text-primary">Contacto</h3>
-
-<div class="grid md:grid-cols-3 gap-6 text-center">
-
-<div>
-<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
-<p>Av. Javier Prado Este 499</p>
-<p class="text-gray-500">San Isidro, Lima</p>
-</div>
-
-<div>
-<span class="material-symbols-outlined text-primary text-3xl">call</span>
-<p>(01) 204 9400</p>
-</div>
-
-<div>
-<span class="material-symbols-outlined text-primary text-3xl">mail</span>
-<p>contacto@drfelixbautista.com</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-primary text-white text-center p-6 mt-10">
-<p>© 2026 Dr. Félix Bautista García</p>
-</footer>
-
-<!-- JS -->
-<script src="main.js"></script>
-
+  <!-- JS -->
+  <script src="main.js"></script>
 </body>
 </html>
